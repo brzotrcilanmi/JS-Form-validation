@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100%;
+    background:linear-gradient(90deg, #555, #222)
+}
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:850px;
+    width:400px;
+    background:#222;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    font-family:'roboto', sans-serif;
+}
+.wrapper h1{
+   position:absolute;
+   top:30px;
+   left:110px;
+   margin-bottom:20px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:100px;
+}
+.input{
+    height:50px;
+    width:300px;
+    margin-bottom:10px;
+    font-size:20px;
+    text-align:center;
+    
+}
+.name, .web-site, .email, .message{
+    position:relative;
+}
+.name i{
+   z-index:2;
+    position:absolute;
+    left:10px;
+    top:20%;
+    color:rgb(69, 69, 69)
+}
+.email i{
+   z-index:2;
+    position:absolute;
+    left:10px;
+    top:20%;
+    color:rgb(69, 69, 69);
+    height:20px;
+    width:50px;
+
+}
+.web-site i{
+   z-index:2;
+    position:absolute;
+    left:10px;
+    top:20%;
+    color:rgb(69, 69, 69)
+}
+textarea{
+    font-size:20px;
+    text-align:center;
+    height:230px;
+    width:304px;
+}
+
+.message i{
+    position:absolute;
+    top:4%;
+    left:10px;
+    color:rgb(69, 69, 69)
+}
+button{
+    height:70px;
+    width:120px;
+    background:#555;
+    color:#fff;
+    border:none;
+    font-size:25px;
+   position:relative;
+   top:0;
+   transition:.3s linear;
+   text-transform: uppercase;
+}
+button:hover{
+    background:rgb(146, 141, 141)
+}
+.main-error{
+    color:#ff0000;
+    font-size:20px;
+    font-family:'roboto';
+    z-index:200;
+    position:relative;
+    top:00px;
+    /* text-transform:uppercase; */
+}
+.error{
+    color:#ff0000;
+    font-size:15px;
+    font-family:'roboto';
+    z-index:200;
+    margin-bottom:20px;
+}
+
+.modal{
+    z-index:2000;
+    position: absolute;
+    background:rgb(97, 97, 97);
+    height:500px;
+    width:700px;
+    display:grid;
+    place-items:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:none;  
+}
+.modal h1{
+    color:rgb(255, 255, 255);
+    font:40px 'Roboto';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-350%);
+}
+.modal button{
+    width:200px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,150%);
+}
+.modal i{
+    color:#fff;
+    width:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
